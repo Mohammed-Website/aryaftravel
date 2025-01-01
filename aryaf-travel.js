@@ -456,7 +456,7 @@ function openFullScreenImage(src, text) {
     const whatsappButton = document.createElement('a');
     whatsappButton.className = 'whatsapp_button';
     whatsappButton.innerText = 'إرسال هذا العرض';
-    whatsappButton.href = `https://wa.me/+97337111535?text=طلب%20حجز%20هذا%20العرض:%0Ahttps://mohammed-website.github.io/aryafalbahraintravel/${encodeURIComponent(src)}`;
+    whatsappButton.href = `https://wa.me/+97336363525?text=طلب%20حجز%20هذا%20العرض:%0Ahttps://mohammed-website.github.io/aryafalbahraintravel/${encodeURIComponent(src)}`;
     fullScreenDiv.appendChild(whatsappButton);
 
     // Close on background click
@@ -697,7 +697,7 @@ openWhatsAppNumber = function () {
 
     insertNewClick('alseef.com');
 
-    const whatsappNumber = "+97337111535";
+    const whatsappNumber = "+97336363525";
     const message = encodeURIComponent('سلام عليكم ورحمة الله وبركاته'); // Optional pre-filled message
     const url = `https://wa.me/${whatsappNumber}?text=${message}`;
     window.open(url, "_blank"); // Opens in a new tab
