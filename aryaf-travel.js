@@ -1,6 +1,6 @@
 function toggleSidebar() {
-    const sidebar = document.getElementById("mughader_mobile_sidebar");
-    const overlay = document.getElementById("mughader_sidebar_overlay");
+    const sidebar = document.getElementById("mughader-mobile-sidebar");
+    const overlay = document.getElementById("aryaf-travel-sidebar-overlay");
 
     if (sidebar.style.right === "0px") {
         closeSidebar();
@@ -11,8 +11,8 @@ function toggleSidebar() {
 }
 
 function closeSidebar() {
-    const sidebar = document.getElementById("mughader_mobile_sidebar");
-    const overlay = document.getElementById("mughader_sidebar_overlay");
+    const sidebar = document.getElementById("mughader-mobile-sidebar");
+    const overlay = document.getElementById("aryaf-travel-sidebar-overlay");
 
     sidebar.style.right = "-250px"; // Hide sidebar
     overlay.classList.remove("active"); // Hide overlay
@@ -27,7 +27,7 @@ function closeSidebar() {
 
 
 /* First Section Background Design */
-const canvas = document.getElementById("neon_canvas");
+const canvas = document.getElementById("neon-canvas");
 const ctx = canvas.getContext("2d");
 
 canvas.width = window.innerWidth;
@@ -170,13 +170,13 @@ animateCanvas();
 
 
 /* Ai bot chat functionality */
-let chatbotIcon = document.getElementById("mughader_chatbot_icon");
-let chatSidebar = document.getElementById("mughader_chat_sidebar");
-let closeChat = document.getElementById("mughader_close_chat");
-let sendBtn = document.getElementById("mughader_send_btn");
-let messageBar = document.getElementById("mughader_message_bar");
-let messageBox = document.querySelector(".mughader_message_box");
-let chatOverlay = document.getElementById("mughader_chat_overlay");
+let chatbotIcon = document.getElementById("aryaf-travel-chatbot-icon");
+let chatSidebar = document.getElementById("aryaf-travel-chat-sidebar");
+let closeChat = document.getElementById("aryaf-travel-close-chat");
+let sendBtn = document.getElementById("aryaf-travel-send-btn");
+let messageBar = document.getElementById("aryaf-travel-message-bar");
+let messageBox = document.querySelector(".aryaf-travel-message-box");
+let chatOverlay = document.getElementById("aryaf-travel-chat-overlay");
 
 let API_URL = "https://api.openai.com/v1/chat/completions";
 let API_KEY = "sk-***76cA";
@@ -255,7 +255,7 @@ sendBtn.onclick = function () {
 
 
 
-        document.getElementById("mughader_message_bar").style.height = "40px"; // Reset to default height;
+        document.getElementById("aryaf-travel-message-bar").style.height = "40px"; // Reset to default height;
     }
 };
 
@@ -299,7 +299,7 @@ messageBar.addEventListener("input", function () {
 });
 
 // Handle Dynamic Text Direction
-document.querySelectorAll('.mughader_dynamic_direction_input_class').forEach(input => {
+document.querySelectorAll('.aryaf-travel-dynamic-direction-input-class').forEach(input => {
     input.addEventListener('input', function () {
         let firstChar = this.value.trim().charAt(0);
 
@@ -369,7 +369,7 @@ function scrollToMiddleOfElement(className) {
 
 
 /* Header show or hide based on scrolling */
-const header = document.getElementById('mughader_header');
+const header = document.getElementById('mughader-header');
 let lastScrollPosition = 0;
 
 window.addEventListener('scroll', () => {
@@ -457,21 +457,21 @@ const sectionData = [
 
 // Function to dynamically create the section
 function createScrollableCardsSection(dataArray) {
-    const section = document.getElementById("scrollable_cards_section_id");
+    const section = document.getElementById("scrollable-cards-section-id");
 
     dataArray.forEach((data) => {
         const container = document.createElement('div');
-        container.className = 'scrollable_cards_container';
+        container.className = 'scrollable-cards-container';
 
         // Create the title
         const title = document.createElement('h2');
-        title.className = 'scrollable_section_title';
+        title.className = 'scrollable-section-title';
         title.innerText = data.title;
         container.appendChild(title);
 
         // Create the scrollable row
         const scrollableRow = document.createElement('div');
-        scrollableRow.className = 'scrollable_cards_row';
+        scrollableRow.className = 'scrollable-cards-row';
 
         // Loop through the images and create cards
         Object.keys(data).forEach((key) => {
@@ -479,7 +479,7 @@ function createScrollableCardsSection(dataArray) {
                 const [src, text] = data[key];
 
                 const card = document.createElement('div');
-                card.className = 'scrollable_card';
+                card.className = 'scrollable-card';
 
                 const img = document.createElement('img');
                 img.src = src;
@@ -504,31 +504,31 @@ function openFullScreenImage(src, text) {
 
     /* Create the sull screen container div */
     const fullScreenDiv = document.createElement('div');
-    fullScreenDiv.className = 'full_screen_container';
+    fullScreenDiv.className = 'full-screen-container';
 
     // Add animation class for fade-in effect
     setTimeout(() => fullScreenDiv.classList.add('visible'), 10);
 
     const exitButton = document.createElement('button');
     exitButton.innerText = 'عودة';
-    exitButton.className = 'exit_button';
+    exitButton.className = 'exit-button';
     exitButton.addEventListener('click', closeFullScreenImage);
     fullScreenDiv.appendChild(exitButton);
 
     const title = document.createElement('h2');
     title.innerText = text;
-    title.className = 'full_screen_title';
+    title.className = 'full-screen-title';
     fullScreenDiv.appendChild(title);
 
     // Full-screen image
     const fullScreenImage = document.createElement('img');
     fullScreenImage.src = src;
-    fullScreenImage.className = 'full_screen_image';
+    fullScreenImage.className = 'full-screen-image';
     fullScreenDiv.appendChild(fullScreenImage);
 
     // WhatsApp button
     const whatsappButton = document.createElement('a');
-    whatsappButton.className = 'whatsapp_button';
+    whatsappButton.className = 'whatsapp-button';
     whatsappButton.innerText = 'إرسال هذا العرض';
     whatsappButton.href = `https://wa.me/+97336363525?text=💎%20طلب%20حجز%20عرض%20جديد%20💎%0A%0Aسلام%20عليكم،%20حاب%20أسأل%20عن%20عرض%0A*${encodeURIComponent(text)}*%0Aوحاب%20أعرف%20تفاصيل%20أكثر%20عن%20عروضكم%20المشابهة.%0A%0A🔗%20رابط%20صورة%20العرض:%0Aaryaftravel.com/${encodeURIComponent(src)}%0A%0Aبإنتظار%20ردكم%20وشكرًا%20لكم`;
     fullScreenDiv.appendChild(whatsappButton);
@@ -570,12 +570,12 @@ createScrollableCardsSection(sectionData);
 
 
 /* Function for import all comments from google sheet */
-document.getElementById("indoforall_comment_form").addEventListener("submit", async function (event) {
+document.getElementById("indoforall-comment-form").addEventListener("submit", async function (event) {
     event.preventDefault(); // Prevent page refresh
 
-    let name = document.getElementById("indoforall_comment_username").value.trim();
-    let comment = document.getElementById("indoforall_comment_text").value.trim();
-    let stars = document.getElementById("indoforall_comment_stars").value;
+    let name = document.getElementById("indoforall-comment-username").value.trim();
+    let comment = document.getElementById("indoforall-comment-text").value.trim();
+    let stars = document.getElementById("indoforall-comment-stars").value;
 
 
     let formData = new URLSearchParams();
@@ -592,7 +592,7 @@ document.getElementById("indoforall_comment_form").addEventListener("submit", as
         let data = await response.text();
 
         if (data === "Success") {
-            document.getElementById("indoforall_comment_form").reset();
+            document.getElementById("indoforall-comment-form").reset();
 
             await fetchReviews(); // Wait until fetchReviews() is fully executed
 
@@ -607,7 +607,7 @@ function fetchReviews() {
     fetch("https://script.google.com/macros/s/AKfycbyBAJQhhVA5Uhxe2rrEZ4rjB0Ttn4SrYBptwjx47VZlxtgi3dENPfmNyAmrfL-QZpdEnQ/exec")
         .then(response => response.json())
         .then(data => {
-            let indoforall_clint_rate_area = document.getElementById("indoforall_clint_rate_area");
+            let indoforall_clint_rate_area = document.getElementById("indoforall-clint-rate-area");
             indoforall_clint_rate_area.innerHTML = ""; // Clear old reviews
 
             data.reverse().forEach(item => { // Reverse to show newest first
@@ -617,23 +617,23 @@ function fetchReviews() {
                 if (!comment.trim()) return;
 
                 let clintRateDiv = document.createElement("div");
-                clintRateDiv.classList.add("indoforall_rate_div");
+                clintRateDiv.classList.add("indoforall-rate-div");
 
                 clintRateDiv.innerHTML = `
-                <div class="indoforall_clint_rate_date_div indoforall_animate_on_scroll">
-                    <h3 class="indoforall_animate_on_scroll">${date}</h3>
+                <div class="indoforall-clint-rate-date-div">
+                    <h3>${date}</h3>
                 </div>
 
-                <div class="indoforall_clint_rate_info_div indoforall_animate_on_scroll">
+                <div class="indoforall-clint-rate-info-div">
                     <img src="مكتب-سياحي/مكتب-سياحي-بحريني.webp" alt="ويجز للسفر والسياحة - مكتب سياحي" title="ويجز للسفر والسياحة - مكتب سياحي">
                     <h4>${name}</h4>
                 </div>
 
-                <div class="indoforall_clint_rate_comment_div">
+                <div class="indoforall-clint-rate-comment-div">
                     <h5>${comment}</h5>
                 </div>
 
-                <div class="indoforall_clint_rate_star_div">
+                <div class="indoforall-clint-rate-star-div">
                     ${"★".repeat(starAmount)}
                 </div>
             `;
@@ -651,7 +651,7 @@ function fetchReviews() {
 
 // Function to Show Floating Success Notification
 function showSuccessNotification() {
-    let notification = document.getElementById("indoforall_success_notification");
+    let notification = document.getElementById("indoforall-success-notification");
     notification.style.display = "block";
 
     setTimeout(() => {
@@ -697,8 +697,8 @@ fetchReviews();
 
 
 
-/* Function to trach the first inserted letter in the inputs with the class name of "mughader_dynamic_direction_input_class" to set their direction value */
-document.querySelectorAll('.mughader_dynamic_direction_input_class').forEach(input => {
+/* Function to trach the first inserted letter in the inputs with the class name of "aryaf-travel-dynamic-direction-input-class" to set their direction value */
+document.querySelectorAll('.aryaf-travel-dynamic-direction-input-class').forEach(input => {
     input.addEventListener('input', function () {
         let firstChar = this.value.trim().charAt(0);
 
