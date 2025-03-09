@@ -1,5 +1,5 @@
 function toggleSidebar() {
-    const sidebar = document.getElementById("mughader-mobile-sidebar");
+    const sidebar = document.getElementById("aryaf-travel-mobile-sidebar");
     const overlay = document.getElementById("aryaf-travel-sidebar-overlay");
 
     if (sidebar.style.right === "0px") {
@@ -11,7 +11,7 @@ function toggleSidebar() {
 }
 
 function closeSidebar() {
-    const sidebar = document.getElementById("mughader-mobile-sidebar");
+    const sidebar = document.getElementById("aryaf-travel-mobile-sidebar");
     const overlay = document.getElementById("aryaf-travel-sidebar-overlay");
 
     sidebar.style.right = "-250px"; // Hide sidebar
@@ -369,7 +369,7 @@ function scrollToMiddleOfElement(className) {
 
 
 /* Header show or hide based on scrolling */
-const header = document.getElementById('mughader-header');
+const header = document.getElementById('aryaf-travel-header');
 let lastScrollPosition = 0;
 
 window.addEventListener('scroll', () => {

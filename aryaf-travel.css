@@ -295,7 +295,7 @@ html {
 
 
 /* Header Styling with Neon Background Animation */
-#mughader-header {
+#aryaf-travel-header {
   background: black;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   position: sticky;
@@ -306,7 +306,7 @@ html {
 }
 
 /* Animated Background */
-#mughader-header::before {
+#aryaf-travel-header::before {
   content: "";
   position: absolute;
   top: 0;
@@ -324,7 +324,7 @@ header.hidden {
   transform: translateY(-100%);
 }
 
-.mughader-header-container {
+.aryaf-travel-header-container {
   direction: ltr;
   display: flex;
   justify-content: space-between;
@@ -333,16 +333,16 @@ header.hidden {
 }
 
 /* Logo */
-.mughader-header-logo {
+.aryaf-travel-header-logo {
   width: 7rem;
 }
 
 /* Navigation Links (Desktop) */
-.mughader-desktop-nav {
+.aryaf-travel-desktop-nav {
   display: flex;
 }
 
-.mughader-nav-links {
+.aryaf-travel-nav-links {
   direction: rtl;
   display: flex;
   list-style: none;
@@ -353,35 +353,35 @@ header.hidden {
 }
 
 /* Ensure social icons are in the same row */
-.mughader-social-icon {
+.aryaf-travel-social-icon {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 /* Increase spacing slightly if needed */
-.mughader-nav-links li {
+.aryaf-travel-nav-links li {
   display: flex;
   align-items: center;
 }
 
 /* Neon Text Effect */
-.mughader-nav-links a,
-.mughader-mobile-sidebar a {
+.aryaf-travel-nav-links a,
+.aryaf-travel-mobile-sidebar a {
   color: white;
   text-shadow: 0 0 2px #00eaff;
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
 
-.mughader-nav-links a:hover,
-.mughader-mobile-sidebar a:hover {
+.aryaf-travel-nav-links a:hover,
+.aryaf-travel-mobile-sidebar a:hover {
   color: #00eaff;
   text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff;
 }
 
 /* Neon Social Icons */
-.mughader-social-icon ion-icon {
+.aryaf-travel-social-icon ion-icon {
   background: linear-gradient(to right, #ff00ff, #00ffff);
   color: white;
   font-size: 1.5rem;
@@ -391,12 +391,12 @@ header.hidden {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s;
 }
 
-.mughader-social-icon ion-icon:hover {
+.aryaf-travel-social-icon ion-icon:hover {
   transform: scale(1.1);
 }
 
 /* Mobile Menu Icon */
-.mughader-mobile-menu-icon {
+.aryaf-travel-mobile-menu-icon {
   display: none;
   font-size: 1.5rem;
   cursor: pointer;
@@ -406,13 +406,13 @@ header.hidden {
 }
 
 /* Neon Sidebar */
-.mughader-mobile-sidebar {
+.aryaf-travel-mobile-sidebar {
   background-color: rgba(0, 0, 0, 0.9);
   box-shadow: -2px 0 10px rgba(0, 238, 255, 0.5);
 }
 
 /* Sidebar (Mobile) */
-.mughader-mobile-sidebar {
+.aryaf-travel-mobile-sidebar {
   background: rgba(0, 0, 0, 0.9);
   z-index: 1000;
   position: fixed;
@@ -426,16 +426,16 @@ header.hidden {
   transition: right 0.3s ease;
 }
 
-.mughader-mobile-sidebar ul {
+.aryaf-travel-mobile-sidebar ul {
   list-style: none;
   text-align: right;
 }
 
-.mughader-mobile-sidebar li {
+.aryaf-travel-mobile-sidebar li {
   margin: 2rem 15px 0.5rem 0;
 }
 
-.mughader-mobile-sidebar a {
+.aryaf-travel-mobile-sidebar a {
   text-decoration: none;
   color: white;
   font-size: 0.9rem;
@@ -443,11 +443,11 @@ header.hidden {
   cursor: pointer;
 }
 
-.mughader-mobile-sidebar a:hover {
+.aryaf-travel-mobile-sidebar a:hover {
   color: #007bff;
 }
 
-.mughader-mobile-social-icons-div {
+.aryaf-travel-mobile-social-icons-div {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -474,7 +474,7 @@ header.hidden {
 }
 
 /* Close Icon */
-.mughader-mobile-sidebar .mughader-close-icon {
+.aryaf-travel-mobile-sidebar .aryaf-travel-close-icon {
   position: absolute;
   top: 10px;
   left: 15px;
@@ -485,13 +485,13 @@ header.hidden {
 }
 
 /* Neon Close Icon */
-.mughader-close-icon {
+.aryaf-travel-close-icon {
   color: white;
   text-shadow: 0 0 10px #ff0000;
   transition: transform 0.3s ease-in-out;
 }
 
-.mughader-close-icon:hover {
+.aryaf-travel-close-icon:hover {
   transform: rotate(180deg);
   text-shadow: 0 0 20px #ff0000;
 }
@@ -886,7 +886,7 @@ header.hidden {
 
 
 /* Fourth Section Style */
-.mughader-last-section {
+.aryaf-travel-last-section {
   background: linear-gradient(90deg, #00172e, #003c78);
   display: flex;
   flex-direction: column;
@@ -894,11 +894,11 @@ header.hidden {
   align-items: center;
 }
 
-.mughader-last-section h1 {
+.aryaf-travel-last-section h1 {
   text-shadow: 0 0 2px #0ff, 0 0 2px #0ff;
 }
 
-.mughader-last-section * {
+.aryaf-travel-last-section * {
   color: white;
   direction: rtl;
   font-size: 1rem;
@@ -1014,12 +1014,12 @@ header.hidden {
 
 
 /* Customers omments Section */
-.mughader-customers-comments-section {
+.aryaf-travel-customers-comments-section {
   background: #f9f9f9;
   padding-top: 0.5vmax;
 }
 
-.mughader-customers-comments-section h6 {
+.aryaf-travel-customers-comments-section h6 {
   font-size: 1.5rem;
   font-weight: bold;
   color: #2c3e50;
@@ -1034,7 +1034,7 @@ header.hidden {
   position: relative;
 }
 
-.mughader-customers-comments-section h6::after {
+.aryaf-travel-customers-comments-section h6::after {
   content: "";
   display: block;
   width: 50px;
@@ -1361,8 +1361,8 @@ footer * {
 @media (max-width: 950px) {
 
   /* Neon Text Effect */
-  .mughader-nav-links a,
-  .mughader-mobile-sidebar a {
+  .aryaf-travel-nav-links a,
+  .aryaf-travel-mobile-sidebar a {
     text-shadow: 0 0 3px #00eaff, 0 0 3px #00eaff;
   }
 
@@ -1418,7 +1418,7 @@ footer * {
 
 
   /* About Us Section */
-  .mughader-last-section * {
+  .aryaf-travel-last-section * {
     font-size: 2vw;
   }
 
@@ -1520,12 +1520,12 @@ footer * {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .mughader-desktop-nav {
+  .aryaf-travel-desktop-nav {
     display: none;
     /* Hide desktop navigation */
   }
 
-  .mughader-mobile-menu-icon {
+  .aryaf-travel-mobile-menu-icon {
     display: block;
     /* Show mobile menu icon */
   }
@@ -1655,7 +1655,7 @@ footer * {
 @media (max-width: 600px) {
 
   /* Logo */
-  .mughader-header-logo {
+  .aryaf-travel-header-logo {
     width: 25vw;
   }
 
@@ -1710,12 +1710,12 @@ footer * {
 @media (max-width: 400px) {
 
   /* Neon Text Effect */
-  .mughader-nav-links a,
-  .mughader-mobile-sidebar a {
+  .aryaf-travel-nav-links a,
+  .aryaf-travel-mobile-sidebar a {
     text-shadow: 0 0 2.5px #00eaff, 0 0 2.5px #00eaff;
   }
 
-  .mughader-header-container {
+  .aryaf-travel-header-container {
     justify-content: space-between;
   }
 
@@ -1785,7 +1785,7 @@ footer * {
 
 
   /* About Us Section */
-  .mughader-last-section * {
+  .aryaf-travel-last-section * {
     font-size: 2.8vw;
   }
 
@@ -1813,7 +1813,7 @@ footer * {
 
 
 
-  .mughader-customers-comments-section h6 {
+  .aryaf-travel-customers-comments-section h6 {
     font-size: 5.5vw;
   }
 
