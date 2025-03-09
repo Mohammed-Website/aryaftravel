@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://aryaftravel.com/sitemap.xml
