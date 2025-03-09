@@ -457,11 +457,12 @@ const sectionData = [
 
 // Function to dynamically create the section
 function createScrollableCardsSection(dataArray) {
-    const section = document.getElementById("scrollable-cards-section-id");
+    const section = document.getElementById("aryaf-travel-scrollable-cards-section-id");
 
     dataArray.forEach((data) => {
         const container = document.createElement('div');
         container.className = 'scrollable-cards-container';
+        container.setAttribute('title', 'مكتب سياحي بحريني - ارياف البحرين');
 
         // Create the title
         const title = document.createElement('h2');
@@ -480,10 +481,11 @@ function createScrollableCardsSection(dataArray) {
 
                 const card = document.createElement('div');
                 card.className = 'scrollable-card';
+                card.setAttribute('title', 'مكتب سياحي بحريني - ارياف البحرين');
 
                 const img = document.createElement('img');
                 img.src = src;
-                img.alt = text;
+                img.alt = text + ' - مكتب سياحي بحريني - ارياف البحرين';
                 img.addEventListener('click', () => openFullScreenImage(src, text)); // Pass text to full-screen function
                 card.appendChild(img);
 
@@ -501,10 +503,10 @@ function openFullScreenImage(src, text) {
     // Disable document scrolling
     document.body.style.overflow = 'hidden';
 
-
-    /* Create the sull screen container div */
+    /* Create the full screen container div */
     const fullScreenDiv = document.createElement('div');
     fullScreenDiv.className = 'full-screen-container';
+    fullScreenDiv.setAttribute('title', 'مكتب سياحي بحريني - ارياف البحرين');
 
     // Add animation class for fade-in effect
     setTimeout(() => fullScreenDiv.classList.add('visible'), 10);
@@ -524,6 +526,7 @@ function openFullScreenImage(src, text) {
     const fullScreenImage = document.createElement('img');
     fullScreenImage.src = src;
     fullScreenImage.className = 'full-screen-image';
+    fullScreenImage.setAttribute('alt', 'مكتب سياحي بحريني - ارياف البحرين');
     fullScreenDiv.appendChild(fullScreenImage);
 
     // WhatsApp button
@@ -544,7 +547,6 @@ function openFullScreenImage(src, text) {
     function closeFullScreenImage() {
         fullScreenDiv.classList.remove('visible'); // Trigger fade-out
         setTimeout(() => fullScreenDiv.remove(), 300); // Remove element after fade-out
-
 
         document.body.style.overflow = ''; // Re-enable document scrolling
     }
@@ -569,13 +571,14 @@ createScrollableCardsSection(sectionData);
 
 
 
+
 /* Function for import all comments from google sheet */
-document.getElementById("indoforall-comment-form").addEventListener("submit", async function (event) {
+document.getElementById("aryaf-travel-comment-form").addEventListener("submit", async function (event) {
     event.preventDefault(); // Prevent page refresh
 
-    let name = document.getElementById("indoforall-comment-username").value.trim();
-    let comment = document.getElementById("indoforall-comment-text").value.trim();
-    let stars = document.getElementById("indoforall-comment-stars").value;
+    let name = document.getElementById("aryaf-travel-comment-username").value.trim();
+    let comment = document.getElementById("aryaf-travel-comment-text").value.trim();
+    let stars = document.getElementById("aryaf-travel-comment-stars").value;
 
 
     let formData = new URLSearchParams();
@@ -592,7 +595,7 @@ document.getElementById("indoforall-comment-form").addEventListener("submit", as
         let data = await response.text();
 
         if (data === "Success") {
-            document.getElementById("indoforall-comment-form").reset();
+            document.getElementById("aryaf-travel-comment-form").reset();
 
             await fetchReviews(); // Wait until fetchReviews() is fully executed
 
@@ -607,8 +610,8 @@ function fetchReviews() {
     fetch("https://script.google.com/macros/s/AKfycbyBAJQhhVA5Uhxe2rrEZ4rjB0Ttn4SrYBptwjx47VZlxtgi3dENPfmNyAmrfL-QZpdEnQ/exec")
         .then(response => response.json())
         .then(data => {
-            let indoforall_clint_rate_area = document.getElementById("indoforall-clint-rate-area");
-            indoforall_clint_rate_area.innerHTML = ""; // Clear old reviews
+            let aryaf_travel_clint_rate_area = document.getElementById("aryaf-travel-clint-rate-area");
+            aryaf_travel_clint_rate_area.innerHTML = ""; // Clear old reviews
 
             data.reverse().forEach(item => { // Reverse to show newest first
                 let { date, name, comment, starAmount } = item;
@@ -617,33 +620,33 @@ function fetchReviews() {
                 if (!comment.trim()) return;
 
                 let clintRateDiv = document.createElement("div");
-                clintRateDiv.classList.add("indoforall-rate-div");
+                clintRateDiv.classList.add("aryaf-travel-rate-div");
 
                 clintRateDiv.innerHTML = `
-                <div class="indoforall-clint-rate-date-div">
+                <div class="aryaf-travel-clint-rate-date-div">
                     <h3>${date}</h3>
                 </div>
 
-                <div class="indoforall-clint-rate-info-div">
+                <div class="aryaf-travel-clint-rate-info-div">
                     <img src="مكتب-سياحي/مكتب-سياحي-بحريني.webp" alt="ويجز للسفر والسياحة - مكتب سياحي" title="ويجز للسفر والسياحة - مكتب سياحي">
                     <h4>${name}</h4>
                 </div>
 
-                <div class="indoforall-clint-rate-comment-div">
+                <div class="aryaf-travel-clint-rate-comment-div">
                     <h5>${comment}</h5>
                 </div>
 
-                <div class="indoforall-clint-rate-star-div">
+                <div class="aryaf-travel-clint-rate-star-div">
                     ${"★".repeat(starAmount)}
                 </div>
             `;
 
-                indoforall_clint_rate_area.appendChild(clintRateDiv);
+            aryaf_travel_clint_rate_area.appendChild(clintRateDiv);
             });
 
             // Smooth appearance with delay
             setTimeout(() => {
-                indoforall_clint_rate_area.classList.add("show");
+                aryaf_travel_clint_rate_area.classList.add("show");
             }, 100);
         })
         .catch(error => console.error("Error fetching reviews:", error));
@@ -651,7 +654,7 @@ function fetchReviews() {
 
 // Function to Show Floating Success Notification
 function showSuccessNotification() {
-    let notification = document.getElementById("indoforall-success-notification");
+    let notification = document.getElementById("aryaf-travel-success-notification");
     notification.style.display = "block";
 
     setTimeout(() => {

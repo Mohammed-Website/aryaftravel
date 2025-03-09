@@ -147,55 +147,75 @@
 
     <header id="aryaf-travel-header">
         <div class="aryaf-travel-header-container">
-            <img src="مكتب-سياحي/مكتب-سياحي-بحريني.webp" alt="مكتب سياحي بحريني - ارياف البحرين" class="aryaf-travel-header-logo">
+            <img src="مكتب-سياحي/مكتب-سياحي-بحريني.webp"
+                alt="مكتب سياحي بحريني - ارياف البحرين - أفضل خدمات السفر والسياحة" class="aryaf-travel-header-logo">
+
             <nav class="aryaf-travel-desktop-nav">
                 <ul class="aryaf-travel-nav-links">
-                    <li><a onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); closeSidebar()">الصفحة الرئيسية</a>
-                    </li>
-                    <li><a onclick="scrollToWhoAreWe('about-us-section-id')">من نحن؟</a></li>
+                    <li><a onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); closeSidebar()"
+                            title="مكتب سياحي بحريني - ارياف البحرين - الصفحة الرئيسية">
+                            الصفحة الرئيسية
+                        </a></li>
+                    <li><a onclick="scrollToWhoAreWe('aryaf-travel-about-us-section-id')"
+                            title="تعرف على مكتب سياحي بحريني - ارياف البحرين">
+                            من نحن؟
+                        </a></li>
                     <li>
                         <a href="https://www.instagram.com/aryaf_travel?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                            target="_blank" class="aryaf-travel-social-icon">
+                            target="_blank" rel="noopener" class="aryaf-travel-social-icon"
+                            title="تابع مكتب سياحي بحريني - ارياف البحرين على انستجرام">
                             <ion-icon name="logo-instagram"></ion-icon>
                         </a>
                     </li>
                     <li>
-                        <a onclick="openWhatsAppNumber()" class="aryaf-travel-social-icon">
+                        <a onclick="openWhatsAppNumber()" class="aryaf-travel-social-icon"
+                            title="تواصل مع مكتب سياحي بحريني - ارياف البحرين عبر واتساب">
                             <ion-icon name="logo-whatsapp"></ion-icon>
                         </a>
                     </li>
                 </ul>
             </nav>
-            <div class="aryaf-travel-mobile-menu-icon" onclick="toggleSidebar()">
+
+            <button class="aryaf-travel-mobile-menu-icon" onclick="toggleSidebar()"
+                aria-label="فتح قائمة مكتب سياحي بحريني - ارياف البحرين">
                 <span>&#9776;</span>
-            </div>
+            </button>
         </div>
-        <div class="aryaf-travel-mobile-sidebar" id="aryaf-travel-mobile-sidebar">
-            <span class="aryaf-travel-close-icon" onclick="closeSidebar()">&times;</span>
+
+        <aside class="aryaf-travel-mobile-sidebar" id="aryaf-travel-mobile-sidebar">
+            <button class="aryaf-travel-close-icon" onclick="closeSidebar()"
+                aria-label="إغلاق قائمة مكتب سياحي بحريني - ارياف البحرين">
+                &times;
+            </button>
             <ul>
-                <li><a onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); closeSidebar()">الصفحة الرئيسية</a>
-                </li>
-                <li><a onclick="scrollToWhoAreWe('about-us-section-id'); closeSidebar()">من
-                        نحن؟</a></li>
-
+                <li><a onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); closeSidebar()"
+                        title="مكتب سياحي بحريني - ارياف البحرين - الصفحة الرئيسية">
+                        الصفحة الرئيسية
+                    </a></li>
+                <li><a onclick="scrollToWhoAreWe('aryaf-travel-about-us-section-id'); closeSidebar()"
+                        title="تعرف على مكتب سياحي بحريني - ارياف البحرين">
+                        من نحن؟
+                    </a></li>
                 <div class="aryaf-travel-mobile-social-icons-div">
-
                     <li>
                         <a href="https://www.instagram.com/aryaf_travel?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                            target="_blank" class="aryaf-travel-social-icon">
+                            target="_blank" rel="noopener" class="aryaf-travel-social-icon"
+                            title="تابع مكتب سياحي بحريني - ارياف البحرين على انستجرام">
                             <ion-icon name="logo-instagram"></ion-icon>
                         </a>
                     </li>
                     <li>
-                        <a onclick="openWhatsAppNumber()" class="aryaf-travel-social-icon">
+                        <a onclick="openWhatsAppNumber()" class="aryaf-travel-social-icon"
+                            title="تواصل مع مكتب سياحي بحريني - ارياف البحرين عبر واتساب">
                             <ion-icon name="logo-whatsapp"></ion-icon>
                         </a>
                     </li>
                 </div>
-
             </ul>
-        </div>
-        <div class="aryaf-travel-sidebar-overlay" id="aryaf-travel-sidebar-overlay" onclick="closeSidebar()"></div>
+        </aside>
+
+        <div class="aryaf-travel-sidebar-overlay" id="aryaf-travel-sidebar-overlay" onclick="closeSidebar()"
+            title="إغلاق قائمة مكتب سياحي بحريني - ارياف البحرين"></div>
     </header>
 
 
@@ -208,24 +228,23 @@
 
 
 
-    <section class="neon-section">
-        <div class="neon-overlay">
-            <div class="neon-text-container">
 
-                <h1 class="neon-title" title="شركة سياحية">شركة ارياف البحرين للسفر والسياحة</h1>
 
-                <p class="neon-subtitle">موقعنا: مملكة البحرين
-
+    <section class="aryaf-travel-intro-section">
+        <div class="aryaf-travel-intro-overlay">
+            <div class="aryaf-travel-intro-text-container">
+                <h1 class="aryaf-travel-intro-title" title="مكتب سياحي بحريني - ارياف البحرين">مكتب سياحي بحريني - ارياف البحرين</h1>
+                <p class="aryaf-travel-intro-subtitle">موقعنا: مملكة البحرين
                     <a href="https://www.google.com/maps/place/Aryaf+Albahrain+Travel/@26.2202713,50.502353,1140m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3e49babcea596ab9:0x5ae5deeaf4f9b8e!8m2!3d26.2202713!4d50.502353!16s%2Fg%2F11fy_qkwyr?authuser=0&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
-                        target="_blank" class="wow-location-icon" title="Open Location in Google Maps">
+                        target="_blank" class="wow-location-icon"
+                        title="موقع مكتب سياحي بحريني - ارياف البحرين على خرائط جوجل">
                         <ion-icon name="location-sharp"></ion-icon>
                     </a>
-
                 </p>
-
-                <a onclick="scrollToMiddleOfElement('scrollable-section-title')" class="neon-button">تصفح العروض
-                    السياحية</a>
-
+                <a onclick="scrollToMiddleOfElement('scrollable-section-title')" class="aryaf-travel-intro-button"
+                    title="تصفح العروض السياحية من مكتب سياحي بحريني - ارياف البحرين">
+                    تصفح عروض ارياف البحرين
+                </a>
             </div>
         </div>
         <canvas id="neon-canvas"></canvas>
@@ -244,7 +263,7 @@
 
 
 
-    <section id="scrollable-cards-section-id">
+    <section id="aryaf-travel-scrollable-cards-section-id">
         <!-- Dynamic JS Code -->
     </section>
 
@@ -260,29 +279,27 @@
 
 
     <!-- Fourth Section Code -->
-    <section id="about-us-section-id" class="aryaf-travel-last-section">
-
-
-        <h1 title="مكتب سياحي بحريني - ارياف البحرين" style="font-weight: bolder; font-size: 2vmax;">من نحن</h1>
-        <p>شركة ارياف البحرين للسفر والسياحة</p>
-        <p>شركة سياحية مقرها مملكة البحرين</p>
-        <p>ارياف تأخذك إلى حيث ما تريد عبر عروضها وبرامجها السياحيه لتسافر حول
-            العالم وتستمتع برحلاتك. ننسق لك رحلتك من جميع الجوانب، حجز التذاكر واختيار أفضل الفنادق والجولات السياحيه
-            بأسعار تتناسب مع ميزانيتك. كما توفر ارياف خدمات مميزه و برامج للشركات وقطاع الأعمال بتكاليف مثالية من
-            خلال خبراءنا في المؤسسة.</p>
-
-
-        <div class="enter-your-email-for-our-news-div">
-            <p class="cta-text">اشترك الآن في نشرتنا البريدية للحصول على أحدث العروض والبرامج
-                السياحية</p>
-            <div class="email-subscription-form">
-                <input type="email" placeholder="أدخل بريدك الإلكتروني" aria-label="أدخل بريدك الإلكتروني">
-                <button type="submit">اشترك الآن</button>
+    <section id="aryaf-travel-about-us-section-id" class="aryaf-travel-last-section">
+        <h1 title="مكتب سياحي بحريني - ارياف البحرين" style="font-weight: bolder; font-size: 2vmax;">
+            من نحن؟
+        </h1>
+        <p>مكتب سياحي بحريني - ارياف البحرين</p>
+        <p>مكتب سياحي في مملكة البحرين</p>
+        <p>ارياف البحرين تأخذك إلى حيث ما تريد عبر عروضها وبرامجها السياحية لتسافر حول
+            العالم وتستمتع برحلاتك. ارياف البحرين تنسق لك رحلتك من جميع الجوانب، حجز التذاكر
+            واختيار أفضل الفنادق والجولات السياحية بأسعار تناسب ميزانيتك. كما توفر ارياف البحرين
+            خدمات مميزة وبرامج للشركات وقطاع الأعمال بتكاليف مثالية من خلال خبرائنا في المؤسسة.</p>
+        <div class="aryaf-travel-enter-your-email-for-our-news-div">
+            <p class="cta-text">اشترك الآن في نشرتنا البريدية للحصول على أحدث العروض والبرامج السياحية من
+                ارياف البحرين</p>
+            <div class="aryaf-travel-email-subscription-form">
+                <input type="email" placeholder="أدخل بريدك الإلكتروني"
+                    aria-label="أدخل بريدك الإلكتروني للاشتراك في مكتب سياحي بحريني - ارياف البحرين">
+                <button type="submit" title="اشترك الآن في مكتب سياحي بحريني - ارياف البحرين">اشترك الآن</button>
             </div>
         </div>
-
-
     </section>
+
 
 
 
@@ -296,21 +313,21 @@
         <h6>أراء عملائنا</h6>
 
 
-        <div id="indoforall-clint-rate-area">
+        <div id="aryaf-travel-clint-rate-area">
             <!-- JavaScript Dynamic Code -->
         </div>
 
-        <div class="indoforall-insert-comment-form-div">
+        <div class="aryaf-travel-insert-comment-form-div">
             <h3>شارك تجربتك مع ارياف البحرين</h3>
-            <form id="indoforall-comment-form">
-                <label for="indoforall-comment-username">إسمك:</label>
-                <input type="text" id="indoforall-comment-username" required>
+            <form id="aryaf-travel-comment-form">
+                <label for="aryaf-travel-comment-username">إسمك:</label>
+                <input type="text" id="aryaf-travel-comment-username" required>
 
-                <label for="indoforall-comment-text">رأيك:</label>
-                <textarea id="indoforall-comment-text" required></textarea>
+                <label for="aryaf-travel-comment-text">رأيك:</label>
+                <textarea id="aryaf-travel-comment-text" required></textarea>
 
-                <label for="indoforall-comment-stars">تقييمك:</label>
-                <select id="indoforall-comment-stars" required>
+                <label for="aryaf-travel-comment-stars">تقييمك:</label>
+                <select id="aryaf-travel-comment-stars" required>
                     <option value="5">★★★★★ (5)</option>
                     <option value="4">★★★★☆ (4)</option>
                     <option value="3">★★★☆☆ (3)</option>
@@ -318,12 +335,12 @@
                     <option value="1">★☆☆☆☆ (1)</option>
                 </select>
 
-                <button type="indoforall-comment-submit" style="pointer-events: none;">إرسال</button>
+                <button type="aryaf-travel-comment-submit" style="pointer-events: none;">إرسال</button>
             </form>
         </div>
 
 
-        <div id="indoforall-success-notification">تمت إضافة تعليقك بنجاح</div>
+        <div id="aryaf-travel-success-notification">تمت إضافة تعليقك بنجاح</div>
 
     </section>
 
@@ -342,11 +359,10 @@
     <!-- Sidebar Overlay -->
     <div id="aryaf-travel-chat-overlay" class="aryaf-travel-sidebar-overlay"></div>
 
-
     <!-- Chatbot Icon -->
     <div id="aryaf-travel-chatbot-icon">
-        <img src="مكتب-سياحي/مكتب-سياحي-ذكاء-اصطناعي.webp" alt="مكتب سياحي بحريني - ارياف البحرين" title="مكتب سياحي بحريني - ارياف البحرين"
-            class="no-full-screen-image">
+        <img src="مكتب-سياحي/مكتب-سياحي-ذكاء-اصطناعي.webp" alt="مكتب سياحي بحريني - ارياف البحرين"
+            title="مكتب سياحي بحريني - ارياف البحرين | الدردشة الذكية" class="no-full-screen-image">
     </div>
 
     <!-- Chat Sidebar -->
@@ -359,16 +375,17 @@
         <div id="aryaf-travel-chat-input">
             <textarea id="aryaf-travel-message-bar" class="aryaf-travel-dynamic-direction-input-class"
                 placeholder="أكتب هنا"></textarea>
-            <button id="aryaf-travel-send-btn">إرسال</button>
+            <button id="aryaf-travel-send-btn" title="إرسال رسالة إلى مكتب سياحي بحريني - ارياف البحرين">إرسال</button>
         </div>
     </div>
 
-
     <!-- WhatsApp Code -->
-    <div class="aryaf-travel-whatsapp-icon-div" onclick="openWhatsAppNumber()">
+    <div class="aryaf-travel-whatsapp-icon-div" onclick="openWhatsAppNumber()"
+        title="تواصل عبر واتساب - مكتب سياحي بحريني - ارياف البحرين">
         <ion-icon name="logo-whatsapp"></ion-icon>
-        <p>للحجز والإستفسار</p>
+        <p>للحجز والاستفسار</p>
     </div>
+
 
 
 
@@ -383,7 +400,7 @@
     <footer id="aryaf-travel-footer">
 
         <img src="مكتب-سياحي/مكتب-سياحي-بحريني.webp" alt="مكتب سياحي بحريني - ارياف البحرين">
-        <p style="direction: rtl;">© حقوق الطبع والنشر 2025 Aryaf Travel<br>جميع الحقوق محفوظة.</p>
+        <p style="direction: rtl;">ارياف البحرين | Aryaf Travel<br>جميع الحقوق محفوظة 2025 ©</p>
 
     </footer>
 

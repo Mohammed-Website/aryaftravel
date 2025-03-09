@@ -368,6 +368,7 @@ header.hidden {
 /* Neon Text Effect */
 .aryaf-travel-nav-links a,
 .aryaf-travel-mobile-sidebar a {
+  text-decoration: none;
   color: white;
   text-shadow: 0 0 2px #00eaff;
   cursor: pointer;
@@ -397,6 +398,8 @@ header.hidden {
 
 /* Mobile Menu Icon */
 .aryaf-travel-mobile-menu-icon {
+  background: transparent;
+  border: none;
   display: none;
   font-size: 1.5rem;
   cursor: pointer;
@@ -486,14 +489,15 @@ header.hidden {
 
 /* Neon Close Icon */
 .aryaf-travel-close-icon {
+  background: transparent;
+  border: none;
   color: white;
   text-shadow: 0 0 10px #ff0000;
   transition: transform 0.3s ease-in-out;
 }
 
 .aryaf-travel-close-icon:hover {
-  transform: rotate(180deg);
-  text-shadow: 0 0 20px #ff0000;
+  color: #ff0000;
 }
 
 /* Cool Animated Background */
@@ -524,7 +528,7 @@ header.hidden {
 
 
 /* Section Styling */
-.neon-section {
+.aryaf-travel-intro-section {
   position: relative;
   width: 100%;
   height: 50vh;
@@ -536,7 +540,7 @@ header.hidden {
 }
 
 /* Overlay */
-.neon-overlay {
+.aryaf-travel-intro-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -550,7 +554,7 @@ header.hidden {
 }
 
 /* Text Container */
-.neon-text-container {
+.aryaf-travel-intro-text-container {
   text-align: center;
   color: #fff;
   z-index: 2;
@@ -559,7 +563,7 @@ header.hidden {
 }
 
 /* Title Styling */
-.neon-title {
+.aryaf-travel-intro-title {
   font-size: 2.5rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -567,7 +571,7 @@ header.hidden {
 }
 
 /* Subtitle Styling */
-.neon-subtitle {
+.aryaf-travel-intro-subtitle {
   font-size: 1.2rem;
   margin-top: 10px;
   color: #b0f5ff;
@@ -575,7 +579,7 @@ header.hidden {
 }
 
 /* Button Styling */
-.neon-button {
+.aryaf-travel-intro-button {
   margin-top: 20px;
   display: inline-block;
   padding: 10px 15px;
@@ -588,7 +592,7 @@ header.hidden {
   transition: all 0.2s ease-in-out;
 }
 
-.neon-button:hover {
+.aryaf-travel-intro-button:hover {
   background: #005ec9;
   box-shadow: 0 0 20px #0077ff;
   transform: scale(1.05);
@@ -640,7 +644,7 @@ header.hidden {
 
 
 /* Section Styling */
-#scrollable-cards-section-id {
+#aryaf-travel-scrollable-cards-section-id {
   padding: 20px;
   position: relative;
   overflow: hidden;
@@ -906,7 +910,7 @@ header.hidden {
 }
 
 /* Email Subscription Section */
-.enter-your-email-for-our-news-div {
+.aryaf-travel-enter-your-email-for-our-news-div {
   margin-top: 20px;
   text-align: center;
   padding: 20px;
@@ -925,7 +929,7 @@ header.hidden {
 }
 
 /* Email Subscription Form */
-.email-subscription-form {
+.aryaf-travel-email-subscription-form {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -934,7 +938,7 @@ header.hidden {
 }
 
 /* Input Field */
-.email-subscription-form input {
+.aryaf-travel-email-subscription-form input {
   width: 70%;
   padding: 10px 15px;
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -946,17 +950,17 @@ header.hidden {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
-.email-subscription-form input::placeholder {
+.aryaf-travel-email-subscription-form input::placeholder {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.email-subscription-form input:focus {
+.aryaf-travel-email-subscription-form input:focus {
   border-color: #00bcd4;
   box-shadow: 0px 0px 8px rgba(0, 188, 212, 0.8);
 }
 
 /* Submit Button */
-.email-subscription-form button {
+.aryaf-travel-email-subscription-form button {
   padding: 10px 20px;
   font-size: 1rem;
   font-weight: bold;
@@ -969,7 +973,7 @@ header.hidden {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.email-subscription-form button:active {
+.aryaf-travel-email-subscription-form button:active {
   transform: scale(0.95);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -1044,13 +1048,13 @@ header.hidden {
   border-radius: 2px;
 }
 
-#indoforall-clint-rate-section {
+#aryaf-travel-clint-rate-section {
   display: flex;
   overflow: hidden;
   border-radius: 3px;
 }
 
-#indoforall-clint-rate-area {
+#aryaf-travel-clint-rate-area {
   background: #dadada;
   width: 100%;
   max-width: 100%;
@@ -1066,12 +1070,12 @@ header.hidden {
   scroll-snap-type: x mandatory;
 }
 
-#indoforall-clint-rate-area.show {
+#aryaf-travel-clint-rate-area.show {
   opacity: 1;
   transform: translateY(0);
 }
 
-.indoforall-rate-div {
+.aryaf-travel-rate-div {
   background: rgb(46, 46, 46);
   color: white;
   min-width: 35rem;
@@ -1086,43 +1090,43 @@ header.hidden {
   scroll-snap-align: center;
 }
 
-.indoforall-rate-div:hover {
+.aryaf-travel-rate-div:hover {
   box-shadow: 0 0 3px 0.5px rgb(0, 255, 0);
 }
 
-.indoforall-clint-rate-date-div {
+.aryaf-travel-clint-rate-date-div {
   display: flex;
   justify-content: flex-end;
 }
 
-.indoforall-clint-rate-date-div h3 {
+.aryaf-travel-clint-rate-date-div h3 {
   font-size: 1rem;
   font-weight: 200;
 }
 
-.indoforall-clint-rate-info-div {
+.aryaf-travel-clint-rate-info-div {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-.indoforall-clint-rate-info-div img {
+.aryaf-travel-clint-rate-info-div img {
   width: 3.5rem;
   border-radius: 50%;
 }
 
-.indoforall-clint-rate-info-div h4 {
+.aryaf-travel-clint-rate-info-div h4 {
   font-size: 1rem;
   margin-right: 10px;
 }
 
-.indoforall-clint-rate-comment-div {
+.aryaf-travel-clint-rate-comment-div {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-.indoforall-clint-rate-comment-div h5 {
+.aryaf-travel-clint-rate-comment-div h5 {
   font-size: 1.3rem;
   font-weight: 300;
   margin-top: 10px;
@@ -1130,7 +1134,7 @@ header.hidden {
   line-height: 1.4;
 }
 
-.indoforall-clint-rate-star-div {
+.aryaf-travel-clint-rate-star-div {
   margin-top: 10px;
   display: flex;
   justify-content: flex-end;
@@ -1140,7 +1144,7 @@ header.hidden {
 }
 
 /* Hide vertical scrollbar */
-#indoforall-clint-rate-area::-webkit-scrollbar {
+#aryaf-travel-clint-rate-area::-webkit-scrollbar {
   display: none;
 }
 
@@ -1157,7 +1161,7 @@ header.hidden {
 
 
 /* Styling the main container */
-.indoforall-insert-comment-form-div {
+.aryaf-travel-insert-comment-form-div {
   width: 55vw;
   margin: 10px auto;
   padding: 20px;
@@ -1168,7 +1172,7 @@ header.hidden {
 }
 
 /* Styling the heading */
-.indoforall-insert-comment-form-div h3 {
+.aryaf-travel-insert-comment-form-div h3 {
   font-size: 1.5rem;
   color: #333;
   margin-bottom: 15px;
@@ -1176,14 +1180,14 @@ header.hidden {
 }
 
 /* Form styling */
-#indoforall-comment-form {
+#aryaf-travel-comment-form {
   display: flex;
   flex-direction: column;
   gap: 15px 0;
 }
 
 /* Label styling */
-#indoforall-comment-form label {
+#aryaf-travel-comment-form label {
   font-size: 1rem;
   font-weight: bold;
   color: #000000;
@@ -1191,9 +1195,9 @@ header.hidden {
 }
 
 /* Input and textarea styling */
-#indoforall-comment-username,
-#indoforall-comment-text,
-#indoforall-comment-stars {
+#aryaf-travel-comment-username,
+#aryaf-travel-comment-text,
+#aryaf-travel-comment-stars {
   width: 100%;
   padding: 10px 0;
   border: 1px solid #000000;
@@ -1202,19 +1206,19 @@ header.hidden {
 }
 
 /* Textarea specific styling */
-#indoforall-comment-text {
+#aryaf-travel-comment-text {
   min-height: 80px;
   resize: vertical;
 }
 
 /* Select dropdown styling */
-#indoforall-comment-stars {
+#aryaf-travel-comment-stars {
   cursor: pointer;
   background-color: #fff;
 }
 
 /* Submit button styling */
-#indoforall-comment-form button {
+#aryaf-travel-comment-form button {
   background: linear-gradient(to top, rgb(0, 52, 82), rgb(0, 127, 200));
   color: white;
   font-size: 1rem;
@@ -1225,7 +1229,7 @@ header.hidden {
   transition: background 0.3s;
 }
 
-#indoforall-success-notification {
+#aryaf-travel-success-notification {
   position: fixed;
   top: 50%;
   /* Start from the middle of the screen vertically */
@@ -1245,7 +1249,7 @@ header.hidden {
 }
 
 /* Show animation */
-#indoforall-success-notification.show {
+#aryaf-travel-success-notification.show {
   opacity: 1;
   transform: translate(-50%, -50%);
   /* Move up to center smoothly */
@@ -1318,12 +1322,12 @@ footer * {
 @media(max-width:1250px) {
 
   /* Styling the main container */
-  .indoforall-insert-comment-form-div {
+  .aryaf-travel-insert-comment-form-div {
     width: 80vw;
   }
 
   /* Form styling */
-  #indoforall-comment-form {
+  #aryaf-travel-comment-form {
     gap: 5px 0;
   }
 
@@ -1369,16 +1373,16 @@ footer * {
 
 
 
-  .neon-section {
+  .aryaf-travel-intro-section {
     height: 45vh;
   }
 
-  .neon-text-container {
+  .aryaf-travel-intro-text-container {
     width: 90vw;
     padding: 10px 2px;
   }
 
-  .neon-title {
+  .aryaf-travel-intro-title {
     font-size: 4.8vw;
     text-shadow: 0 0 0.5vw #00eaff, 0 0 0.5vw #00eaff;
   }
@@ -1391,7 +1395,7 @@ footer * {
 
 
   /* Offer Cards Section */
-  #scrollable-cards-section-id {
+  #aryaf-travel-scrollable-cards-section-id {
     padding: 5px 2px;
   }
 
@@ -1426,12 +1430,12 @@ footer * {
     font-size: 3vw;
   }
 
-  .email-subscription-form button {
+  .aryaf-travel-email-subscription-form button {
     padding: 0.5vmax 1vmax;
     font-size: 3vw;
   }
 
-  .email-subscription-form input {
+  .aryaf-travel-email-subscription-form input {
     width: 75%;
     padding: 5px;
     font-size: 3.5vw;
@@ -1445,34 +1449,34 @@ footer * {
 
 
 
-  .indoforall-rate-div {
+  .aryaf-travel-rate-div {
     min-width: 65vw;
     margin: 0 8px;
     padding: 5px 2px;
   }
 
-  .indoforall-clint-rate-date-div h3 {
+  .aryaf-travel-clint-rate-date-div h3 {
     font-size: 2.5vw;
   }
 
-  .indoforall-clint-rate-info-div img {
+  .aryaf-travel-clint-rate-info-div img {
     width: 5.5vw;
   }
 
-  .indoforall-clint-rate-info-div h4 {
+  .aryaf-travel-clint-rate-info-div h4 {
     font-size: 2.5vw;
   }
 
-  .indoforall-clint-rate-comment-div h5 {
+  .aryaf-travel-clint-rate-comment-div h5 {
     font-size: 2.5vw;
   }
 
-  .indoforall-clint-rate-star-div {
+  .aryaf-travel-clint-rate-star-div {
     margin-top: 8px;
     font-size: 3.5vw;
   }
 
-  .indoforall-insert-comment-form-div h3 {
+  .aryaf-travel-insert-comment-form-div h3 {
     font-size: 4vw;
   }
 
@@ -1539,7 +1543,7 @@ footer * {
 
 
   /* First Section Subtitle Styling */
-  .neon-subtitle {
+  .aryaf-travel-intro-subtitle {
     font-size: 4.5vw;
   }
 
@@ -1548,7 +1552,7 @@ footer * {
     font-size: 9vw;
   }
 
-  .neon-button {
+  .aryaf-travel-intro-button {
     margin-top: 5px;
     padding: 2vw 3vw;
     font-size: 4vw;
@@ -1662,11 +1666,11 @@ footer * {
 
 
 
-  .email-subscription-form input {
+  .aryaf-travel-email-subscription-form input {
     width: 100%;
   }
 
-  .email-subscription-form {
+  .aryaf-travel-email-subscription-form {
     flex-direction: column;
   }
 
@@ -1729,7 +1733,7 @@ footer * {
 
 
   /* Page Intro Section */
-  .neon-section {
+  .aryaf-travel-intro-section {
     height: 35vh;
   }
 
@@ -1737,7 +1741,7 @@ footer * {
     height: 35vh;
   }
 
-  .neon-text-container {
+  .aryaf-travel-intro-text-container {
     width: 95vw;
     padding: 0 2px;
   }
@@ -1793,11 +1797,11 @@ footer * {
     font-size: 3.8vw;
   }
 
-  .email-subscription-form button {
+  .aryaf-travel-email-subscription-form button {
     font-size: 4.5vw;
   }
 
-  .email-subscription-form input {
+  .aryaf-travel-email-subscription-form input {
     font-size: 4.5vw;
     padding: 2px 3px;
   }
@@ -1817,47 +1821,47 @@ footer * {
     font-size: 5.5vw;
   }
 
-  .indoforall-rate-div {
+  .aryaf-travel-rate-div {
     min-width: 90vw;
     margin: 0 5px;
   }
 
-  .indoforall-clint-rate-date-div h3 {
+  .aryaf-travel-clint-rate-date-div h3 {
     font-size: 3.5vw;
   }
 
-  .indoforall-clint-rate-info-div img {
+  .aryaf-travel-clint-rate-info-div img {
     width: 8.5vw;
   }
 
-  .indoforall-clint-rate-info-div h4 {
+  .aryaf-travel-clint-rate-info-div h4 {
     font-size: 3.5vw;
   }
 
-  .indoforall-clint-rate-comment-div h5 {
+  .aryaf-travel-clint-rate-comment-div h5 {
     font-size: 3.5vw;
   }
 
-  .indoforall-clint-rate-star-div {
+  .aryaf-travel-clint-rate-star-div {
     margin-top: 8px;
     font-size: 5vw;
   }
 
-  .indoforall-insert-comment-form-div {
+  .aryaf-travel-insert-comment-form-div {
     width: 100vw;
     padding: 5px 10px;
   }
 
-  .indoforall-insert-comment-form-div h3 {
+  .aryaf-travel-insert-comment-form-div h3 {
     font-size: 5vw;
     margin-bottom: 5px;
   }
 
-  #indoforall-comment-form label {
+  #aryaf-travel-comment-form label {
     font-size: 4vw;
   }
 
-  #indoforall-comment-form button {
+  #aryaf-travel-comment-form button {
     font-size: 4vw;
   }
 
