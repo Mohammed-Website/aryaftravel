@@ -130,7 +130,7 @@ sendBtn.onclick = function () {
 
         let botResponse = `
                 <div class="chat response">
-                    <img src="مكتب-سياحي/مكتب-سياحي-بحريني.webp">
+                    <img src="مكتب-سياحي/مكتب-سياحي.webp">
                     <span class="new">...</span>
                 </div>
             `;
@@ -355,18 +355,18 @@ function createScrollableCardsSection(dataArray) {
 
     dataArray.forEach((data) => {
         const container = document.createElement('div');
-        container.className = 'scrollable-cards-container';
+        container.className = 'aryaf-travel-scrollable-cards-container';
         container.setAttribute('title', 'مكتب سياحي بحريني - ارياف البحرين');
 
         // Create the title
         const title = document.createElement('h2');
-        title.className = 'scrollable-section-title';
+        title.className = 'aryaf-travel-scrollable-section-title';
         title.innerText = data.title;
         container.appendChild(title);
 
         // Create the scrollable row
         const scrollableRow = document.createElement('div');
-        scrollableRow.className = 'scrollable-cards-row';
+        scrollableRow.className = 'aryaf-travel-scrollable-cards-row';
 
         // Loop through the images and create cards
         Object.keys(data).forEach((key) => {
@@ -374,7 +374,7 @@ function createScrollableCardsSection(dataArray) {
                 const [src, text] = data[key];
 
                 const card = document.createElement('div');
-                card.className = 'scrollable-card';
+                card.className = 'aryaf-travel-scrollable-card';
                 card.setAttribute('title', 'مكتب سياحي بحريني - ارياف البحرين');
 
                 const img = document.createElement('img');

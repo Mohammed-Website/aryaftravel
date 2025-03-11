@@ -152,7 +152,7 @@ html {
   overflow-y: auto;
   background: #000;
   color: #00eaff;
-  box-shadow: inset 0 0 5px #00eaff;
+  box-shadow: inset 0 0 5px #dcfcff;
 }
 
 #aryaf-travel-chat-input {
@@ -160,7 +160,6 @@ html {
   padding: 10px 20px 20px 20px;
   display: flex;
   gap: 5px;
-  border-top: 1px solid #00eaff;
 }
 
 #aryaf-travel-chat-input textarea {
@@ -174,7 +173,6 @@ html {
   color: white;
   font-size: 16px;
   line-height: 1.3;
-  box-shadow: 0 0 5px #00eaff;
   align-content: center;
 }
 
@@ -258,19 +256,16 @@ html {
   color: white;
   border-radius: 30px;
   padding: 3px 5px;
-  box-shadow: 0 0 5px #00eaff;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .aryaf-travel-whatsapp-icon-div:hover {
   transform: scale(1.015);
-  box-shadow: 0 0 10px #00eaff;
 }
 
 .aryaf-travel-whatsapp-icon-div ion-icon {
   font-size: 2.5rem;
-  color: #00eaff;
 }
 
 
@@ -352,11 +347,6 @@ header.hidden {
   color: black;
   cursor: pointer;
   transition: 0.3s ease-in-out;
-}
-
-.aryaf-travel-nav-links a:hover,
-.aryaf-travel-mobile-sidebar a:hover {
-  color: #00eaff;
 }
 
 /* Neon Social Icons */
@@ -613,7 +603,7 @@ header.hidden {
 }
 
 /* Title Styling with Animated Background */
-.scrollable-section-title {
+.aryaf-travel-scrollable-section-title {
   font-size: 2rem;
   font-weight: bold;
   text-align: right;
@@ -629,7 +619,7 @@ header.hidden {
 }
 
 /* Scrollable Row */
-.scrollable-cards-row {
+.aryaf-travel-scrollable-cards-row {
   direction: rtl;
   display: flex;
   gap: 10px;
@@ -640,21 +630,21 @@ header.hidden {
 }
 
 /* Custom Scrollbar (Webkit) */
-.scrollable-cards-row::-webkit-scrollbar {
+.aryaf-travel-scrollable-cards-row::-webkit-scrollbar {
   height: 8px;
 }
 
-.scrollable-cards-row::-webkit-scrollbar-thumb {
+.aryaf-travel-scrollable-cards-row::-webkit-scrollbar-thumb {
   background-color: #457b9d;
   border-radius: 10px;
 }
 
-.scrollable-cards-row::-webkit-scrollbar-track {
+.aryaf-travel-scrollable-cards-row::-webkit-scrollbar-track {
   background-color: #e0e0e0;
 }
 
 /* Individual Card Styling */
-.scrollable-card {
+.aryaf-travel-scrollable-card {
   width: 20rem;
   background: #fff;
   border-radius: 7px;
@@ -666,7 +656,7 @@ header.hidden {
   align-items: center;
 }
 
-.scrollable-card img {
+.aryaf-travel-scrollable-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -674,11 +664,11 @@ header.hidden {
   transition: transform 0.3s ease;
 }
 
-.scrollable-card img:hover {
+.aryaf-travel-scrollable-card img:hover {
   transform: scale(1.05);
 }
 
-.scrollable-cards-container {
+.aryaf-travel-scrollable-cards-container {
   margin-bottom: 4vmax;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
@@ -686,7 +676,7 @@ header.hidden {
   flex-direction: column;
 }
 
-.scrollable-cards-container+.scrollable-cards-container {
+.aryaf-travel-scrollable-cards-container+.aryaf-travel-scrollable-cards-container {
   margin-top: 30px;
 }
 
@@ -1322,16 +1312,16 @@ footer * {
     padding: 5px 2px;
   }
 
-  .scrollable-section-title {
+  .aryaf-travel-scrollable-section-title {
     font-size: 4vw;
     margin-bottom: 1vmax;
   }
 
-  .scrollable-card {
+  .aryaf-travel-scrollable-card {
     width: 40vw;
   }
 
-  .scrollable-cards-container {
+  .aryaf-travel-scrollable-cards-container {
     margin-bottom: 0.1vmax;
     border-radius: 12px;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.9);
