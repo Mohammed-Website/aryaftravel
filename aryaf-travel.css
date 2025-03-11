@@ -87,19 +87,16 @@ html {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  box-shadow: 0 0 3px #00eaff;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 #aryaf-travel-chatbot-icon img {
   width: 100%;
   border-radius: 50%;
-  box-shadow: 0 0 5px #00eaff;
 }
 
 #aryaf-travel-chatbot-icon:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 10px #00eaff;
 }
 
 /* Chat Sidebar with Neon Effect */
@@ -112,7 +109,6 @@ html {
   height: 80%;
   background-color: #000;
   border: 1px solid #00eaff;
-  box-shadow: 0 0 5px #00eaff;
   transform: translateX(110%);
   display: flex;
   flex-direction: column;
@@ -131,12 +127,10 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 0 5px #00eaff;
 }
 
 #aryaf-travel-chat-header h3 {
   margin: 0;
-  text-shadow: 0 0 5px #00eaff;
 }
 
 #aryaf-travel-close-chat {
@@ -277,7 +271,6 @@ html {
 .aryaf-travel-whatsapp-icon-div ion-icon {
   font-size: 2.5rem;
   color: #00eaff;
-  text-shadow: 0 0 15px #00eaff;
 }
 
 
@@ -296,28 +289,13 @@ html {
 
 /* Header Styling with Neon Background Animation */
 #aryaf-travel-header {
-  background: black;
+  background: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   position: sticky;
   top: 0;
   z-index: 999;
   transition: transform 0.3s ease-in-out;
   overflow: hidden;
-}
-
-/* Animated Background */
-#aryaf-travel-header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(45deg, #00ff00, #0000ff, #00ff00, #0000ff);
-  background-size: 300% 300%;
-  animation: neonBackground 6s infinite linear;
-  opacity: 0.2;
-  z-index: -1;
 }
 
 header.hidden {
@@ -334,7 +312,7 @@ header.hidden {
 
 /* Logo */
 .aryaf-travel-header-logo {
-  width: 7rem;
+  width: 15rem;
 }
 
 /* Navigation Links (Desktop) */
@@ -346,8 +324,10 @@ header.hidden {
   direction: rtl;
   display: flex;
   list-style: none;
-  gap: 20px; /* Space between items */
-  align-items: center; /* Ensures everything is centered */
+  gap: 20px;
+  /* Space between items */
+  align-items: center;
+  /* Ensures everything is centered */
   padding: 0;
   margin: 0;
 }
@@ -369,8 +349,7 @@ header.hidden {
 .aryaf-travel-nav-links a,
 .aryaf-travel-mobile-sidebar a {
   text-decoration: none;
-  color: white;
-  text-shadow: 0 0 2px #00eaff;
+  color: black;
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
@@ -378,18 +357,16 @@ header.hidden {
 .aryaf-travel-nav-links a:hover,
 .aryaf-travel-mobile-sidebar a:hover {
   color: #00eaff;
-  text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff;
 }
 
 /* Neon Social Icons */
 .aryaf-travel-social-icon ion-icon {
-  background: linear-gradient(to right, #ff00ff, #00ffff);
+  background: linear-gradient(to right, #8a008a, #008888);
   color: white;
   font-size: 1.5rem;
   padding: 5px;
   border-radius: 10%;
-  box-shadow: 0 0 5px #00eaff;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+  transition: transform 0.3s ease-in-out;
 }
 
 .aryaf-travel-social-icon ion-icon:hover {
@@ -403,20 +380,18 @@ header.hidden {
   display: none;
   font-size: 1.5rem;
   cursor: pointer;
-  color: white;
-  text-shadow: 0 0 5px #00eaff, 0 0 5px #00eaff;
+  color: black;
   transition: 0.3s ease-in-out;
 }
 
 /* Neon Sidebar */
 .aryaf-travel-mobile-sidebar {
-  background-color: rgba(0, 0, 0, 0.9);
-  box-shadow: -2px 0 10px rgba(0, 238, 255, 0.5);
+  background-color: black;
 }
 
 /* Sidebar (Mobile) */
 .aryaf-travel-mobile-sidebar {
-  background: rgba(0, 0, 0, 0.9);
+  background: black;
   z-index: 1000;
   position: fixed;
   top: 0;
@@ -424,7 +399,6 @@ header.hidden {
   width: 230px;
   max-width: 100%;
   height: 100%;
-  box-shadow: -2px 0 2px rgba(0, 238, 255, 0.5);
   overflow-y: auto;
   transition: right 0.3s ease;
 }
@@ -473,7 +447,6 @@ header.hidden {
 /* Sidebar Overlay with Neon Glow */
 .aryaf-travel-sidebar-overlay.active {
   background: rgba(0, 0, 0, 0.7);
-  box-shadow: inset 0 0 50px #00eaff;
 }
 
 /* Close Icon */
@@ -492,7 +465,6 @@ header.hidden {
   background: transparent;
   border: none;
   color: white;
-  text-shadow: 0 0 10px #ff0000;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -529,34 +501,23 @@ header.hidden {
 
 /* Section Styling */
 .aryaf-travel-intro-section {
-  position: relative;
-  width: 100%;
-  height: 50vh;
-  background: #0c0c0c;
+  width: 100vw;
+  background: var(--bg-color);
   overflow: hidden;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-/* Overlay */
-.aryaf-travel-intro-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
+.aryaf-travel-intro-image {
   width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.3);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
+  height: 60vh;
 }
 
 /* Text Container */
 .aryaf-travel-intro-text-container {
   text-align: center;
-  color: #fff;
   z-index: 2;
   position: relative;
   padding: 20px;
@@ -566,16 +527,12 @@ header.hidden {
 .aryaf-travel-intro-title {
   font-size: 2.5rem;
   font-weight: bold;
-  text-transform: uppercase;
-  text-shadow: 0 0 3px #00eaff, 0 0 3px #00eaff;
 }
 
 /* Subtitle Styling */
 .aryaf-travel-intro-subtitle {
   font-size: 1.2rem;
   margin-top: 10px;
-  color: #b0f5ff;
-  text-shadow: 0 0 3px #00eaff;
 }
 
 /* Button Styling */
@@ -594,36 +551,38 @@ header.hidden {
 
 .aryaf-travel-intro-button:hover {
   background: #005ec9;
-  box-shadow: 0 0 20px #0077ff;
   transform: scale(1.05);
 }
 
-/* Background Animation Canvas */
-#neon-canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
+/* Our Location Address Links */
+.our-location-address-div {
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+  /* Spacing between links */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* Ensures responsiveness on small screens */
 }
 
-/* Location Icon Styling */
-.wow-location-icon {
-  margin-left: 10px;
-  font-size: 1.5rem;
-  color: #00eaff;
+.our-location-address-div a {
+  font-size: 1rem;
+  padding: 5px 10px;
+  background: linear-gradient(135deg, #005ec9, #002a59);
+  color: white;
   text-decoration: none;
-  display: inline-block;
-  vertical-align: middle;
-  filter: drop-shadow(0 0 5px #00eaff);
-  transition: transform 0.2s ease-in-out, filter 0.3s ease-in-out;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Glow Effect on Hover */
-.wow-location-icon:hover {
-  transform: scale(1.2);
-  filter: drop-shadow(0 0 15px #00eaff);
+.our-location-address-div a:hover {
+  transform: translateY(-2px);
 }
 
 
@@ -664,7 +623,6 @@ header.hidden {
   padding: 10px 5px 10px 0;
   border-top-right-radius: 7px;
   border-top-left-radius: 7px;
-  text-shadow: 0 0 2px #0ff, 0 0 2px #0ff;
   background: linear-gradient(90deg, #457b9d, #1d3557, #457b9d, #1d3557);
   background-size: 300% 100%;
   animation: animate-bg 10s linear infinite;
@@ -898,10 +856,6 @@ header.hidden {
   align-items: center;
 }
 
-.aryaf-travel-last-section h1 {
-  text-shadow: 0 0 2px #0ff, 0 0 2px #0ff;
-}
-
 .aryaf-travel-last-section * {
   color: white;
   direction: rtl;
@@ -956,7 +910,6 @@ header.hidden {
 
 .aryaf-travel-email-subscription-form input:focus {
   border-color: #00bcd4;
-  box-shadow: 0px 0px 8px rgba(0, 188, 212, 0.8);
 }
 
 /* Submit Button */
@@ -1167,7 +1120,6 @@ header.hidden {
   padding: 20px;
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
@@ -1176,7 +1128,6 @@ header.hidden {
   font-size: 1.5rem;
   color: #333;
   margin-bottom: 15px;
-  text-shadow: 0 0 1px #0ff, 0 0 1px #0ff;
 }
 
 /* Form styling */
@@ -1272,8 +1223,10 @@ header.hidden {
 
 /* Footer Style */
 footer {
+  width: 100vw;
+  padding: 100px 0;
   direction: ltr;
-  background: black;
+  background: white;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -1282,30 +1235,14 @@ footer {
   position: relative;
 }
 
-/* Animated Background */
-footer::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(45deg, #00ff00, #0000ff, #00ff00, #0000ff);
-  background-size: 300% 300%;
-  animation: neonBackground 6s infinite linear;
-  opacity: 0.2;
-  z-index: -1;
-}
-
 footer img {
-  width: 6rem;
+  width: 16rem;
 }
 
 footer * {
-  color: white;
+  color: black;
   text-align: center;
   font-size: 0.9rem;
-  text-shadow: 0 0 2px #00eaff;
 }
 
 
@@ -1364,19 +1301,6 @@ footer * {
 /* Responsive Design */
 @media (max-width: 950px) {
 
-  /* Neon Text Effect */
-  .aryaf-travel-nav-links a,
-  .aryaf-travel-mobile-sidebar a {
-    text-shadow: 0 0 3px #00eaff, 0 0 3px #00eaff;
-  }
-
-
-
-
-  .aryaf-travel-intro-section {
-    height: 45vh;
-  }
-
   .aryaf-travel-intro-text-container {
     width: 90vw;
     padding: 10px 2px;
@@ -1384,7 +1308,6 @@ footer * {
 
   .aryaf-travel-intro-title {
     font-size: 4.8vw;
-    text-shadow: 0 0 0.5vw #00eaff, 0 0 0.5vw #00eaff;
   }
 
 
@@ -1547,9 +1470,23 @@ footer * {
     font-size: 4.5vw;
   }
 
-  .wow-location-icon {
+  .aryaf-travel-intro-image {
+    height: 100%;
+  }
+
+  .aryaf-travel-intro-location-icon {
     margin-left: 0;
     font-size: 9vw;
+  }
+
+  /* Our Location Address Links */
+  .our-location-address-div {
+    margin-top: 5px;
+  }
+
+  .our-location-address-div a {
+    padding: 1vw 2vw;
+    font-size: 3vw;
   }
 
   .aryaf-travel-intro-button {
@@ -1660,7 +1597,7 @@ footer * {
 
   /* Logo */
   .aryaf-travel-header-logo {
-    width: 25vw;
+    width: 40vw;
   }
 
 
@@ -1674,29 +1611,28 @@ footer * {
     flex-direction: column;
   }
 
-  /* Page Intro Section */
-  .wow-effect-section {
-    height: 40vh;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  footer {
+    padding: 50px 0;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   footer img {
-    width: 25vw;
+    width: 45vw;
   }
 }
 
@@ -1713,12 +1649,6 @@ footer * {
 /* Responsive Design */
 @media (max-width: 400px) {
 
-  /* Neon Text Effect */
-  .aryaf-travel-nav-links a,
-  .aryaf-travel-mobile-sidebar a {
-    text-shadow: 0 0 2.5px #00eaff, 0 0 2.5px #00eaff;
-  }
-
   .aryaf-travel-header-container {
     justify-content: space-between;
   }
@@ -1733,17 +1663,13 @@ footer * {
 
 
   /* Page Intro Section */
-  .aryaf-travel-intro-section {
-    height: 35vh;
-  }
-
-  .wow-effect-section {
-    height: 35vh;
-  }
-
   .aryaf-travel-intro-text-container {
     width: 95vw;
     padding: 0 2px;
+  }
+
+  .our-location-address-div a {
+    font-size: 4vw;
   }
 
 
