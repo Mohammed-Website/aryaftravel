@@ -347,6 +347,7 @@ header.hidden {
   color: black;
   cursor: pointer;
   transition: 0.3s ease-in-out;
+  font-weight: bold;
 }
 
 /* Neon Social Icons */
