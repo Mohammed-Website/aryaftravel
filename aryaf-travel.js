@@ -399,7 +399,7 @@ function openFullScreenImage(src, text) {
 
     /* Create the full screen container div */
     const fullScreenDiv = document.createElement('div');
-    fullScreenDiv.className = 'full-screen-container';
+    fullScreenDiv.className = 'aryaf-travel-full-screen-container';
     fullScreenDiv.setAttribute('title', 'مكتب سياحي بحريني - ارياف البحرين');
 
     // Add animation class for fade-in effect
@@ -407,25 +407,25 @@ function openFullScreenImage(src, text) {
 
     const exitButton = document.createElement('button');
     exitButton.innerText = 'عودة';
-    exitButton.className = 'exit-button';
+    exitButton.className = 'aryaf-travel-exit-button';
     exitButton.addEventListener('click', closeFullScreenImage);
     fullScreenDiv.appendChild(exitButton);
 
     const title = document.createElement('h2');
     title.innerText = text;
-    title.className = 'full-screen-title';
+    title.className = 'aryaf-travel-full-screen-title';
     fullScreenDiv.appendChild(title);
 
     // Full-screen image
     const fullScreenImage = document.createElement('img');
     fullScreenImage.src = src;
-    fullScreenImage.className = 'full-screen-image';
+    fullScreenImage.className = 'aryaf-travel-full-screen-image';
     fullScreenImage.setAttribute('alt', 'مكتب سياحي بحريني - ارياف البحرين');
     fullScreenDiv.appendChild(fullScreenImage);
 
     // WhatsApp button
     const whatsappButton = document.createElement('a');
-    whatsappButton.className = 'whatsapp-button';
+    whatsappButton.className = 'aryaf-travel-whatsapp-button';
     whatsappButton.innerText = 'إرسال هذا العرض';
     whatsappButton.href = `https://wa.me/+97336363525?text=💎%20طلب%20حجز%20عرض%20جديد%20💎%0A%0Aسلام%20عليكم،%20حاب%20أسأل%20عن%20عرض%0A*${encodeURIComponent(text)}*%0Aوحاب%20أعرف%20تفاصيل%20أكثر%20عن%20عروضكم%20المشابهة.%0A%0A🔗%20رابط%20صورة%20العرض:%0Aaryaftravel.com/${encodeURIComponent(src)}%0A%0Aبإنتظار%20ردكم%20وشكرًا%20لكم`;
     fullScreenDiv.appendChild(whatsappButton);
